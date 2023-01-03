@@ -1,0 +1,14 @@
+
+	Check the database ? (required VICIDIAL) -> etc/astguiclient.conf
+
+	SVN update steps :
+
+	1) svn update.
+
+	2) perl install.pl
+	    after this check version in original VICIDIAL
+	    path ==> vici.inextrix.com/vicidial/admin.php ( admin --> system setting )
+	
+	3) create difference file :
+	    svndiff_3663:3665.diff > vicidiff_3663to3665.diff
+	    difference file path ==> /urs/src/astguiclient/trunk/vicidiff_3663to3665.diff

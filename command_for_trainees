@@ -1,0 +1,39 @@
+1) find file
+-> locate file name
+
+2) find anything in file or folder link any function name
+-> grep -ir "anything you want to fine (function name)"
+
+3) database backup or export file
+-> mysqldump -u root -p asterisk > /var/www/html/backupfile.sql
+
+4) import file in database
+-> mysql -f -uroot -p databasename(asterisk) < file path(/usr/src/ICALLIFY/database/upgrade_3.0.sql)
+
+5)copy file or folder
+-> cp -r sorce_folder dest_folder
+
+6)show link
+-> ls -la
+
+7) Create link
+-> ln -s /usr/src/CALLCENTER/www/CCADMIN /var/www/html/CCADMIN
+
+8) check apache service
+-> systemctl status apache2
+
+9) check your system import
+-> ip -a
+
+10)error log and access log path
+-> tail -f /var/log/apache2/icallify_error.log
+-> tail -f /var/log/apache2/icallify_access.log
+
+11) list file name
+-> ls
+
+12) remove file
+-> rm -rf file name
+
+13) remove all the files from folder 
+-> rm -rf *
